@@ -3,7 +3,7 @@ import './HeaderWelcome.Component.css';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
     MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import logoImage from '../../../assets/images/imagotipo_transparency.png';
-import {LOGIN_PATH} from '../../../commons/paths.const';
+import {LOGIN_PATH, REGISTER_PATH} from '../../../commons/routing/paths.const';
 import { useHistory } from "react-router-dom";
 
 
@@ -17,7 +17,7 @@ export const HeaderWelcomeComponent = () => {
         setIsOpen(!isOpen);
     }
 
-    const addHistory = (path) => history.push(path);
+    const addToHistory = (path) => history.push(path);
 
     return (
             <MDBNavbar color="transparent" dark expand="md">
@@ -36,10 +36,10 @@ export const HeaderWelcomeComponent = () => {
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
                         <MDBNavItem>
-                                <button type="button" className="btn btn-outline-success waves-effect">Registrate</button>
+                                <button type="button" className="btn btn-outline-success waves-effect" onClick={() => addToHistory(REGISTER_PATH)}>Registrate</button>
                         </MDBNavItem>
                         <MDBNavItem>
-                                <button type="button" className="btn btn-outline-default waves-effect" onClick={() => addHistory(LOGIN_PATH)}>Ingresa</button>
+                                <button type="button" className="btn btn-outline-default waves-effect" onClick={() => addToHistory(LOGIN_PATH)}>Ingresa</button>
                         </MDBNavItem>
                         <MDBNavItem>
                             <MDBDropdown >

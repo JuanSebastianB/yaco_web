@@ -4,11 +4,21 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
-import {WelcomeComponent} from './sections/welcome-component/Welcome.Component';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from 'react-router-dom';
+import {routesConst} from './commons/routes.const';
 
 const App = () => {
     return (
-       <WelcomeComponent/>
+        <Router>
+            <Switch>
+                {routesConst.map((route, index) =>
+                    <Route key={index} exact path={route.path} component={route.component}/>)}
+            </Switch>
+        </Router>
     );
 }
 

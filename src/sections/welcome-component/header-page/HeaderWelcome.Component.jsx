@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 import './HeaderWelcome.Component.css';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
     MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
 import logoImage from '../../../assets/images/imagotipo_transparency.png';
+import {LOGIN_PATH} from '../../../commons/paths.const';
+import { useHistory } from "react-router-dom";
+
 
 export const HeaderWelcomeComponent = () => {
+    const history = useHistory();
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -14,8 +17,9 @@ export const HeaderWelcomeComponent = () => {
         setIsOpen(!isOpen);
     }
 
+    const addHistory = (path) => history.push(path);
+
     return (
-        <Router>
             <MDBNavbar color="transparent" dark expand="md">
                 <MDBNavbarBrand>
                     <img src={logoImage} className="img-fluid" alt="logo YACO" />
@@ -32,14 +36,10 @@ export const HeaderWelcomeComponent = () => {
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
                         <MDBNavItem>
-                            <MDBNavLink className="waves-effect waves-light" to="#!">
-                                <MDBIcon fab className="black-text" icon="twitter" />
-                            </MDBNavLink>
+                                <button type="button" className="btn btn-outline-success waves-effect">Registrate</button>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink className="waves-effect waves-light" to="#!">
-                                <MDBIcon fab className="black-text" icon="google-plus-g" />
-                            </MDBNavLink>
+                                <button type="button" className="btn btn-outline-default waves-effect" onClick={() => addHistory(LOGIN_PATH)}>Ingresa</button>
                         </MDBNavItem>
                         <MDBNavItem>
                             <MDBDropdown >
@@ -57,6 +57,5 @@ export const HeaderWelcomeComponent = () => {
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBNavbar>
-        </Router>
     )
 };

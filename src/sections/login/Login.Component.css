@@ -2,17 +2,24 @@ body, html {
     height: 100%;
 }
 .bg {
-    background-image: url("../../assets/images/back_login.jpeg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #388e3c;
+}
+
+.div-card {
+    height: 100vh;
+    border: #388e3c 25px solid;
+    border-radius: 200px 50px 200px 50px;
+    background-color: white;
 }
 
 .top-space {
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
-.transparent-background {
-    background-color: rgba(143, 188, 143, 0.1);
+.color-green {
+    color: #388e3c !important;
 }

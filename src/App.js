@@ -9,7 +9,7 @@ import {
     Switch,
     Route,
 } from 'react-router-dom';
-import {routesConst} from './commons/routes.const';
+import {routesConst} from './commons/constants/routes.const';
 
 const App = () => {
     return (

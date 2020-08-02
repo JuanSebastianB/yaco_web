@@ -6,8 +6,13 @@ import imageWelcome from '../../../assets/images/back.jpeg';
 export const BodyWelcomeComponent = () => {
     return (
         <MDBContainer fluid>
-                <MDBView src={imageWelcome}>
-                </MDBView>
+            <MDBView src={imageWelcome} >
+                {/*<MDBMask className="" overlay="teal-slight">*/}
+                    <MDBAnimation type="fadeIn" className="slower" reveal>
+                        <h1 className="text-intro">¡Mereces conocer sitios interesantes!</h1>
+                    </MDBAnimation>
+                {/*</MDBMask>*/}
+            </MDBView>
             <MDBContainer>
                 <MDBRow className="top-space-row">
                     <MDBCol>

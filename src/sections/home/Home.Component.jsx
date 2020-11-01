@@ -1,8 +1,12 @@
 import React from 'react';
+import {SideMenuComponent} from './side-nav/SideMenu.Component';
+import {MDBContainer} from 'mdbreact';
 
 export const HomeComponent = () => {
 
-    return(
-      <h1>Soy el home</h1>
+    return (
+        <MDBContainer fluid>
+            <SideMenuComponent/>
+        </MDBContainer>
     );
 };

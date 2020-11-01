@@ -54,26 +54,32 @@
 }
 
 .top-space-row-form {
-    margin-top: -28px;
+    margin-top: -20px;
+}
+
+.top-space-register-social {
+    margin-top: 25px;
 }
 
 .button-style-register {
-    font-size: 20px;
+    font-size: 15px;
     background-color: white;
     border-radius: 25px;
     border: 2px solid #388e3c;
     color: #388e3c;
-    padding: 12px 28px;
+    padding: 2px 28px;
+    height: 30px;
 }
 
 .button-style-register:hover {
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #388e3c;
     border-radius: 25px;
     border: 2px solid #388e3c;
     color: white;
-    padding: 12px 28px;
+    padding: 2px 28px;
+    height: 30px;
 }
 
 i {
@@ -84,4 +90,18 @@ i {
     height: 50%;
     display: flex;
     align-items: center;
+}
+
+.icon-social {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.box-line-or {
+    height: 50%;
+    border-bottom: 2px solid lightgray;
+}
+
+.backgroun-color-test {
+    background-color: red;
 }

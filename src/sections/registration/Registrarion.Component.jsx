@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Registrarion.Component.css';
+import {RegistrarionLabels} from './Registrarion.Labels';
 import {MDBCol, MDBContainer, MDBFormInline, MDBInput, MDBRow} from 'mdbreact';
 import {useHistory} from 'react-router-dom';
 import {addToHistory} from '../../commons/utils/utils-routing';
 import {HOME_PATH, LOGIN_PATH} from '../../commons/constants/paths.const';
-import DayPickerInput from "react-day-picker/DayPickerInput";
-import 'react-day-picker/lib/style.css';
+import 'react-modern-calendar-datepicker/lib/DatePicker.css';
+import DatePicker from 'react-modern-calendar-datepicker';
+import facebookIcon from '../../assets/icons/facebook.png';
+import gmailIcon from '../../assets/icons/gmail.png';
 
 export const RegistrationComponent = () => {
     const history = useHistory();
+    const [selectedDay, setSelectedDay] = useState(null);
     return (
         <div className={'color-green-background size-background'}>
             <MDBContainer fluid={true}>
@@ -19,159 +23,130 @@ export const RegistrationComponent = () => {
                                 <i className="fas fa-door-open color-white-text size-ground"/>
                             </MDBRow>
                             <MDBRow className={'center-content'}>
-                                <h1 className={'color-white-text'}>Bienvenido a YACO</h1>
+                                <h1 className={'color-white-text'}>{RegistrarionLabels.welcomeYACO}</h1>
                             </MDBRow>
                             <MDBRow className={'center-content'}>
-                                <h4 className={'color-white-text'}>Si ya tienes cuenta, por favor</h4>
+                                <h4 className={'color-white-text'}>{RegistrarionLabels.accountAlready}</h4>
                             </MDBRow>
                             <MDBRow className={'center-content'}>
                                 <button className={'button-style-login'}
-                                        onClick={() => addToHistory(history, LOGIN_PATH)}>Ingresa
+                                        onClick={() => addToHistory(history, LOGIN_PATH)}>{RegistrarionLabels.login}
                                 </button>
                             </MDBRow>
                         </div>
                     </MDBCol>
                     <MDBCol size="xs" xs="12" sm="8" md="8" lg="8" xl="8" className={'background-form'}>
-                        <form>
-                            <p className="h5 text-center mb-4">Tus datos, tamos en confianza</p>
-                            <MDBRow>
-                                <MDBCol xs={'4'} sm={'4'} md={'4'} lg={'4'} xl={'4'}>
-                                    <p className="text-left">Eres: </p>
-                                </MDBCol>
-                                <MDBCol xs={'8'} sm={'8'} md={'8'} lg={'8'} xl={'8'}>
-                                    <MDBFormInline>
-                                        <MDBInput
-                                            gap
-                                            onClick={() => {
-                                            }}
-                                            checked={true}
-                                            label='Anfitrión'
-                                            type='radio'
-                                            id='radio1'
-                                            containerClass='mr-5'
-                                        />
-                                        <MDBInput
-                                            gap
-                                            onClick={() => {
-                                            }}
-                                            checked={false}
-                                            label='Visitante'
-                                            type='radio'
-                                            id='radio2'
-                                            containerClass='mr-5'
-                                        />
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <MDBRow className={'top-space-row-form'}>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="far fa-user"/>
-                                        <MDBInput label="Tu(s) nombre(s)" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="fas fa-user"/>
-                                        <MDBInput label="Tu(s) apellido(s)" group type="text" validate
-                                                  error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <MDBRow className={'top-space-row-form'}>
-                                <MDBCol>
-                                    <span><strong>Tú tipo de documento</strong></span>
-                                    <div className={'vertical-center'}>
-                                        <select className="browser-default custom-select">
-                                            <option selected disabled>Selecciona...</option>
-                                            <option value="1">CC</option>
-                                            <option value="2">CE</option>
-                                            <option value="3">Pasaporte</option>
-                                        </select>
-                                    </div>
-                                </MDBCol>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="far fa-file"/>
-                                        <MDBInput label="Tu número de documento" group type="text" validate
-                                                  error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <MDBRow className={'top-space-row-form'}>
-                                <MDBCol>
-                                    <span><strong>Tú genero</strong></span>
-                                    <div className={'vertical-center'}>
-                                        <select className="browser-default custom-select">
-                                            <option selected disabled>Selecciona...</option>
-                                            <option value="1">Masculino</option>
-                                            <option value="2">Femenino</option>
-                                            <option value="3">Otro</option>
-                                        </select>
-                                    </div>
-                                </MDBCol>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="fas fa-phone-alt"/>
-                                        <MDBInput label="Tu teléfono" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <MDBRow className={'top-space-row-form'}>
-                                <MDBCol>
-                                    <span><strong>Tu fecha de nacimiento</strong></span>
-                                    <div className={'vertical-center'}>
-                                        <DayPickerInput/>
-                                    </div>
-                                </MDBCol>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="fab fa-odnoklassniki"/>
-                                        <MDBInput label="Tu usuario" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <MDBRow className={'top-space-row-form'}>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="far fa-envelope"/>
-                                        <MDBInput label="Tu Correo Electónico" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="fas fa-envelope"/>
-                                        <MDBInput label="Confirmar Correo" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <MDBRow className={'top-space-row-form'}>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="fas fa-unlock"/>
-                                        <MDBInput label="Tu Contraseña" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                                <MDBCol>
-                                    <MDBFormInline>
-                                        <i className="fas fa-lock"/>
-                                        <MDBInput label="Confirmar contraseña" group type="text" validate error="wrong"
-                                                  success="right"/>
-                                    </MDBFormInline>
-                                </MDBCol>
-                            </MDBRow>
-                            <div className="text-center">
-                                <button className={'button-style-register'} onClick={() => addToHistory(history, HOME_PATH)}>Registrarme</button>
-                            </div>
-                        </form>
+                        <MDBRow>
+                            <MDBCol>
+                                <form>
+                                    <p className="h5 text-center mb-4">{RegistrarionLabels.yourData}</p>
+                                    <MDBRow className={'top-space-row-form'}>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="far fa-user"/>
+                                                <MDBInput label={RegistrarionLabels.yourName} group type="text" validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="fas fa-user"/>
+                                                <MDBInput label={RegistrarionLabels.yourLastName} group type="text"
+                                                          validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBRow className={'top-space-row-form'}>
+                                        <MDBCol>
+                                            <span><strong>{RegistrarionLabels.yourBithdate}</strong></span>
+                                            <div className={'vertical-center'}>
+                                                <DatePicker
+                                                    value={selectedDay}
+                                                    onChange={setSelectedDay}
+                                                    inputPlaceholder="Select a day"
+                                                    shouldHighlightWeekends
+                                                />
+                                            </div>
+                                        </MDBCol>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="fab fa-odnoklassniki"/>
+                                                <MDBInput label={RegistrarionLabels.yourNickname} group type="text"
+                                                          validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBRow className={'top-space-row-form'}>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="far fa-envelope"/>
+                                                <MDBInput label={RegistrarionLabels.yourEmail} group type="text"
+                                                          validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="fas fa-envelope"/>
+                                                <MDBInput label={RegistrarionLabels.validateEmail} group type="text"
+                                                          validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBRow className={'top-space-row-form'}>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="fas fa-unlock"/>
+                                                <MDBInput label={RegistrarionLabels.yourPassword} group type="text"
+                                                          validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                        <MDBCol>
+                                            <MDBFormInline>
+                                                <i className="fas fa-lock"/>
+                                                <MDBInput label={RegistrarionLabels.validatePassword} group type="text"
+                                                          validate
+                                                          error="wrong"
+                                                          success="right"/>
+                                            </MDBFormInline>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBRow>
+                                        <MDBCol className="text-center">
+                                            <button className={'button-style-register'}
+                                                    onClick={() => addToHistory(history, HOME_PATH)}>{RegistrarionLabels.register}</button>
+                                        </MDBCol>
+                                    </MDBRow>
+                                </form>
+                            </MDBCol>
+                        </MDBRow>
+                        <MDBRow className={'top-space-register-social'}>
+                            <MDBCol xs={5} sm={5} md={5} xl={5} lg={5}><div className={'box-line-or'}/></MDBCol>
+                            <MDBCol className="text-center">
+                                <h5>{RegistrarionLabels.registerWith}</h5>
+                            </MDBCol>
+                            <MDBCol xs={5} sm={5} md={5} xl={5} lg={5}><div className={'box-line-or'}/></MDBCol>
+                        </MDBRow>
+                        <MDBRow className={'top-space-register-social'}>
+                            <MDBCol/>
+                            <MDBCol className={'text-center'}>
+                                <img src={facebookIcon} className="icon-social" alt="aligment"/>
+                            </MDBCol>
+                            <MDBCol className="text-center">
+                                <img src={gmailIcon} className="icon-social" alt="aligment"/>
+                            </MDBCol>
+                            <MDBCol/>
+                        </MDBRow>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>

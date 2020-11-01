@@ -3,8 +3,9 @@ import './Login.Component.css';
 import {MDBBtn, MDBCard, MDBCardBody, MDBCol, MDBContainer, MDBInput, MDBModalFooter, MDBRow} from 'mdbreact';
 import isotipoYACO from '../../assets/images/Isotipo_YACO.png'
 import {addToHistory} from "../../commons/utils/utils-routing";
-import {HOME_PATH, REGISTER_PATH} from "../../commons/constants/paths.const";
+import {HOME_PATH, REGISTER_PATH, WELCOME_PATH} from "../../commons/constants/paths.const";
 import {useHistory} from 'react-router-dom';
+import {LoginLabels} from './Login.Labels';
 
 export const LoginComponent = () => {
     const history = useHistory();
@@ -17,8 +18,9 @@ export const LoginComponent = () => {
                             <h5 className="text-center">Siga más pa' entro!</h5>
                             <img
                                 src={isotipoYACO}
-                                className="img-fluid rounded-circle"
-                                alt=""
+                                className="img-fluid rounded-circle logo-style"
+                                onClick={() => addToHistory(history, WELCOME_PATH)}
+                                alt="Ir a incio"
                             />
                         </MDBCol>
                         <MDBCol md="6">
@@ -53,8 +55,8 @@ export const LoginComponent = () => {
                                         <MDBBtn
                                             type="button"
                                             onClick={() => addToHistory(history, HOME_PATH)}
-                                            className="btn-block z-depth-1a">
-                                            Pa' Entro!
+                                            className="btn-block z-depth-1a button-login-style">
+                                            {LoginLabels.loginButton}
                                         </MDBBtn>
                                     </div>
                                 </MDBCardBody>

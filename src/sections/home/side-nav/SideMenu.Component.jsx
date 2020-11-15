@@ -5,7 +5,7 @@ import {MDBAnimation, MDBCol, MDBContainer, MDBLink, MDBRow} from 'mdbreact';
 import {addToHistory} from '../../../commons/utils/utils-routing';
 import {LOGIN_PATH} from '../../../commons/constants/paths.const';
 import {MainPageComponent} from '../main-page/MainPage.Component';
-import {MySitesComponent} from '../my-sites/MySites.Component';
+import {MySitesComponent} from '../../sites/my-sites/MySites.Component';
 import {ConfigurationComponent} from '../Configuration.Component';
 import {SideMenuLabels} from './SideMenu.Labels';
 

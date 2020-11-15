@@ -2,7 +2,7 @@ import React from 'react';
 import './SiteDetail.Component.css';
 import {MDBBtn, MDBContainer} from 'mdbreact';
 import {useDispatch} from 'react-redux';
-import {setShowSiteDetailFlagAction} from '../../../../store/sections/home/main-page/all-sites/all-sites.actions';
+import {setShowSiteDetailFlagAction} from '../../../store/sections/sites/all-sites/all-sites.actions';
 
 export const SiteDetailComponent = () => {
     const dispatch = useDispatch();

@@ -1,10 +1,10 @@
 import React from 'react';
 import './MainPage.Component.css';
 
-import {MostVisitedSitesComponent} from './most-visited-sites/MostVisitedSites.Component';
-import {AllSitesComponent} from './all-sites/AllSites.Component';
+import {MostVisitedSitesComponent} from '../../sites/most-visited-sites/MostVisitedSites.Component';
+import {AllSitesComponent} from '../../sites/all-sites/AllSites.Component';
 import {MDBContainer} from 'mdbreact';
-import {SiteDetailComponent} from './site-detail/SiteDetail.Component';
+import {SiteDetailComponent} from '../../sites/site-detail/SiteDetail.Component';
 import {useSelector} from 'react-redux';
 
 export const MainPageComponent = () => {

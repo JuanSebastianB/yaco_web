@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import allSitesReducers from './sections/home/main-page/all-sites/all-sites.reducers';
+import allSitesReducers from './sections/sites/all-sites/all-sites.reducers';
 
 const reducers = () => ({
     allSitesReducers

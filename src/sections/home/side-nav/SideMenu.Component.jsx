@@ -10,8 +10,18 @@ import {ConfigurationComponent} from '../Configuration.Component';
 import {SideMenuLabels} from './SideMenu.Labels';
 
 const itemsMenu = [
-    {label: SideMenuLabels.main, icon: <i className="fas fa-home"/>, component: <MainPageComponent/>, isConfiguration: false},
-    {label: SideMenuLabels.yourSites, icon: <i className="fas fa-route"/>, component: <MySitesComponent/>, isConfiguration: false},
+    {
+        label: SideMenuLabels.main,
+        icon: <i className="fas fa-home"/>,
+        component: <MainPageComponent/>,
+        isConfiguration: false
+    },
+    {
+        label: SideMenuLabels.yourSites,
+        icon: <i className="fas fa-route"/>,
+        component: <MySitesComponent/>,
+        isConfiguration: false
+    },
     {
         label: SideMenuLabels.configuration,
         icon: <i className="fas fa-tools"/>,
@@ -50,8 +60,9 @@ export const SideMenuComponent = () => {
                     }
                 </div>
                 {itemsMenu.map((item, index) =>
-                    <div className={'flex-container'}>
+                    <div className={'flex-container'} key={index}>
                         <MDBLink
+                            to='#'
                             className={`flex-container ${itemSelected === index ? 'item-active' : 'item-menu-style'}
                             ${item.isConfiguration ? 'configuration-item' : ''}`}
                             onClick={() => {
@@ -63,17 +74,19 @@ export const SideMenuComponent = () => {
                                 type={isMenuOpen ? 'fadeInLeft' : 'fadeOutLeft'}> {item.label}
                             </MDBAnimation>}
                         </MDBLink>
-                        {itemSelected === index ? <div className={`selector-menu-box ${item.isConfiguration ? 'configuration-item' : ''}`}>
-                            <div className={'selector-menu-option'}>
-                                <i className="fas fa-bars" onClick={() => {
-                                    setClickOnMenuOpen(true);
-                                    setIsMenuOpen(!isMenuOpen);
-                                }}/>
-                            </div>
-                        </div> : <span/>}
+                        {itemSelected === index ?
+                            <div className={`selector-menu-box ${item.isConfiguration ? 'configuration-item' : ''}`}>
+                                <div className={'selector-menu-option'}>
+                                    <i className="fas fa-bars" onClick={() => {
+                                        setClickOnMenuOpen(true);
+                                        setIsMenuOpen(!isMenuOpen);
+                                    }}/>
+                                </div>
+                            </div> : <span/>}
                     </div>
                 )}
                 <MDBLink
+                    to='#'
                     className={`flex-container item-menu-style`}
                     onClick={() => {
                         addToHistory(history, LOGIN_PATH);

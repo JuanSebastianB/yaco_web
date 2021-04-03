@@ -8,6 +8,8 @@ import {MainPageComponent} from '../main-page/MainPage.Component';
 import {MySitesComponent} from '../../sites/my-sites/MySites.Component';
 import {ConfigurationComponent} from '../Configuration.Component';
 import {SideMenuLabels} from './SideMenu.Labels';
+import {useDispatch} from 'react-redux';
+import {doLoginAsync} from '../../../store/sections/login/login.actions';
 
 const itemsMenu = [
     {
@@ -32,6 +34,7 @@ const itemsMenu = [
 
 export const SideMenuComponent = () => {
     const history = useHistory();
+    const dispatch = useDispatch();
     const [componentSelected, setComponentSelected] = useState(<MainPageComponent/>);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [clickOnMenuOpen, setClickOnMenuOpen] = useState(false);
@@ -90,6 +93,7 @@ export const SideMenuComponent = () => {
                     className={`flex-container item-menu-style`}
                     onClick={() => {
                         addToHistory(history, LOGIN_PATH);
+                        dispatch(doLoginAsync());
                     }}>
                     <i className="fas fa-sign-out-alt"/>
                     {clickOnMenuOpen && <MDBAnimation

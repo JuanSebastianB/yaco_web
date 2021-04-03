@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {useDispatch} from 'react-redux';
+import React, {useEffect, useState} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
 import './Login.Component.css';
 import {MDBBtn, MDBCard, MDBCardBody, MDBCol, MDBContainer, MDBInput, MDBModalFooter, MDBRow} from 'mdbreact';
 import isotipoYACO from '../../assets/images/Isotipo_YACO.png';
@@ -12,7 +12,12 @@ import {doLoginAction} from '../../store/sections/login/login.actions';
 export const LoginComponent = () => {
   const history = useHistory();
   const dispatch = useDispatch();
-  const [credential, setCredentials] = useState({nick: '', password: ''});
+  const [credential, setCredentials] = useState({nick: '', pass: ''});
+  const validationStatus = useSelector(state => state.loginReducers.validationStatus);
+
+  useEffect(() => {
+    validationStatus && addToHistory(history, HOME_PATH);
+  }, [validationStatus]);
 
   return (<div className="bg">
       <div className={'div-card'}>
@@ -53,7 +58,7 @@ export const LoginComponent = () => {
                     validate
                     containerClass="mb-0"
                     onChange={(event) => setCredentials({
-                      ...credential, password: event.target.value
+                      ...credential, pass: event.target.value
                     })}
                   />
                   <p className="font-small blue-text d-flex justify-content-end pb-3">

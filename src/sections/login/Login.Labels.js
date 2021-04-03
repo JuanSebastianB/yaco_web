@@ -1,3 +1,4 @@
 export const LoginLabels = {
-  loginButton: 'Pa` entro!'
+  loginButton: 'Pa` entro!',
+  registerOption: 'Registrate'
 };

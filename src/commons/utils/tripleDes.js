@@ -1,14 +1,14 @@
 import CryptoJS from 'crypto-js';
 
-const key = 'ThisIsSpartaThisIsSparta'; //length=22
-const base64 = CryptoJS.enc.Utf8.parse(key)
+const key = 'ThisIsSpartaThisIsSparta';
+const base64 = CryptoJS.enc.Utf8.parse(key);
 
 /**
  * need encrypt message in 3DES
  * @param message
  * @returns {CipherParams|PromiseLike<ArrayBuffer>}
  */
-export const encryptMessage = (message = '') => CryptoJS.TripleDES.encrypt(message, base64,{
+export const encryptMessage = (message = '') => CryptoJS.TripleDES.encrypt(message, base64, {
   mode: CryptoJS.mode.ECB
 });
 
@@ -17,6 +17,6 @@ export const encryptMessage = (message = '') => CryptoJS.TripleDES.encrypt(messa
  * @param cipher
  * @returns {string}
  */
-export const decryptMessage = (cipher) => CryptoJS.TripleDES.decrypt(cipher, base64,{
+export const decryptMessage = (cipher) => CryptoJS.TripleDES.decrypt(cipher, base64, {
   mode: CryptoJS.mode.ECB
 }).toString(CryptoJS.enc.Utf8);

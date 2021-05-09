@@ -17,3 +17,15 @@ code {
   background-color: #388e3c;
 }
 
+.back-color-transparent {
+  background-color: transparent !important;
+}
+
+label {
+  color: #388e3c !important;
+}
+
+.md-form input:not([type]), .md-form input[type='text']:not(.browser-default), .md-form input[type='password']:not(.browser-default), .md-form input[type='email']:not(.browser-default), .md-form input[type='url']:not(.browser-default), .md-form input[type='time']:not(.browser-default), .md-form input[type='date']:not(.browser-default), .md-form input[type='datetime']:not(.browser-default), .md-form input[type='datetime-local']:not(.browser-default), .md-form input[type='tel']:not(.browser-default), .md-form input[type='number']:not(.browser-default), .md-form input[type='search']:not(.browser-default), .md-form input[type='phone']:not(.browser-default), .md-form input[type='search-md'], .md-form textarea.md-textarea{
+  box-shadow: 0 1px 0 0 #388e3c !important;
+  border-bottom: 1px solid !important;
+}

@@ -2,15 +2,14 @@ import {getAllSitesService} from '../../../../services/site/site.service';
 
 export const SHOW_SITE_DETAIL = 'SHOW_SITE_DETAIL';
 export const ALL_SITES = 'ALL_SITES';
-export const SITE_SELECTED = "SITE_SELECTED";
-
+export const SITE_SELECTED = 'SITE_SELECTED';
 
 export const getAllSiteAction = () => dispatch => {
     getAllSitesService().then((response) =>
         // console.log(response.data)
         dispatch(setAllSiteAsync(response.data))
-    ).catch((error) =>
-        //TODO -> create handler error
+    ).catch(() =>
+        // TODO -> create handler error
         alert('error en el servicio allSites ')
     );
 };

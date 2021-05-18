@@ -7,6 +7,7 @@ import {
 import {
   getAllSiteAction, setShowSiteDetailFlagAction, setSiteSelectedAction
 } from '../../../store/sections/sites/all-sites/all-sites.actions';
+import { truncateTextDescription } from '../../../commons/utils/text-format';
 
 export const AllSitesComponent = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ export const AllSitesComponent = () => {
         <MDBFormInline className='md-form mr-auto mb-6'>
           <input className='form-control mr-sm-2' type='text' placeholder='Search'
                  aria-label='Search'/>
-          <MDBBtn outline color='primary' rounded size='sm' type='submit' className='mr-auto'>
+          <MDBBtn outline rounded size='sm' type='submit' className='mr-auto'>
             Search
           </MDBBtn>
         </MDBFormInline>
@@ -41,7 +42,7 @@ export const AllSitesComponent = () => {
                         waves/>
           <MDBCardBody>
             <MDBCardTitle>{item.name}</MDBCardTitle>
-            <MDBCardText>{item.description}</MDBCardText>
+            <MDBCardText>{truncateTextDescription(item.description)}</MDBCardText>
             <MDBBtn href='#'
                     onClick={() => openDetailSiteSelected(item)}>Click</MDBBtn>
           </MDBCardBody>

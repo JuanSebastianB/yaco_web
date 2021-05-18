@@ -1,4 +1,10 @@
-.btn{
-    margin-top: 0;
-    margin-bottom: 0;
+.header-item-option {
+    font-family: cursive;
+    margin: 0 1rem 0 1rem;
+    border-radius: 25%;
+}
+
+.header-item-option:hover {
+    background-color: #faf9f8;
+    color: #388e3c !important;
 }

@@ -13,6 +13,7 @@ import gmailIcon from '../../assets/icons/gmail.png';
 export const RegistrationComponent = () => {
   const history = useHistory();
   const [selectedDay, setSelectedDay] = useState(null);
+
   return (<div className={'color-green-background size-background'}>
       <MDBContainer fluid={true}>
         <MDBRow>

@@ -1,121 +1,71 @@
 import React from 'react';
 import './BodyWelcome.Component.css';
-import {
-  MDBAnimation, MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCol, MDBContainer, MDBMask, MDBRow, MDBView
-} from 'mdbreact';
-import imageWelcome from '../../../assets/images/back.jpeg';
+import { Carousel } from 'primereact/carousel';
+import { Image } from 'primereact/image';
+import { products } from './mocks';
 
 export const BodyWelcomeComponent = () => {
-  return (<MDBContainer fluid>
-    <MDBCarousel
-      activeItem={1}
-      length={3}
-      showControls={true}
-      showIndicators={true}
-      className="z-depth-1">
-      <MDBCarouselInner>
-        <MDBCarouselItem itemId="1">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src={imageWelcome}
-              alt="First slide"
-            />
-            <MDBMask overlay="black-light"/>
-          </MDBView>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="2">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src="https://mdbootstrap.com/img/Others/documentation/img%20(137)-mini.jpg"
-              alt="Second slide"
-            />
-            <MDBMask overlay="black-strong"/>
-          </MDBView>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="3">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src="https://mdbootstrap.com/img/Others/documentation/img%20(141)-mini.jpg"
-              alt="Third slide"
-            />
-            <MDBMask overlay="black-slight"/>
-          </MDBView>
-        </MDBCarouselItem>
-      </MDBCarouselInner>
-    </MDBCarousel>
-    <MDBContainer>
-      <MDBRow className='top-space-row'>
-        <MDBCol>
-          <MDBView hover zoom>
-            <img
-              src='https://mdbootstrap.com/img/Others/documentation/img%20(131)-mini.jpg'
-              className='img-fluid'
-              alt=''
-            />
-            <MDBMask className='flex-center'>
-              <p className='white-text'>Zoom effect</p>
-            </MDBMask>
-          </MDBView>
-        </MDBCol>
-        <MDBCol>
-          <MDBAnimation type='fadeIn' className='slower' reveal>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-              Lorem
-              Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando
-              un
-              impresor
-              (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
-              los
-              mezcló
-              de tal manera que logró hacer un libro de textos especimen</p>
-          </MDBAnimation>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow className='top-space-row'>
-        <MDBCol>
-          <MDBAnimation type='fadeIn' className='slower' reveal>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-              Lorem
-              Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando
-              un
-              impresor
-              (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
-              los
-              mezcló
-              de tal manera que logró hacer un libro de textos especimen</p>
-          </MDBAnimation>
-        </MDBCol>
-        <MDBCol>
-          <MDBAnimation type='fadeInRight' className='slow' reveal>
-            <img src='https://mdbootstrap.com/img/Others/documentation/1.jpg' className='img-fluid'
-                 alt=''/>
-          </MDBAnimation>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow className='top-space-row'>
-        <MDBCol>
-          <MDBAnimation type='fadeInLeft' className='slow' reveal>
-            <img src='https://mdbootstrap.com/img/Others/documentation/1.jpg' className='img-fluid'
-                 alt=''/>
-          </MDBAnimation>
-        </MDBCol>
-        <MDBCol>
-          <MDBAnimation type='fadeIn' className='slower'>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-              Lorem
-              Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando
-              un
-              impresor
-              (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
-              los
-              mezcló
-              de tal manera que logró hacer un libro de textos especimen</p>
-          </MDBAnimation>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
-  </MDBContainer>);
+  const itemTemplate = ({ title, image }) => <React.Fragment>
+    <Image src={image} className={'center-image-carousel'} alt="Image Text"/>
+  </React.Fragment>;
+  return (<React.Fragment>
+    <div className="p-grid">
+      <div className="p-col-12">
+        <Carousel value={products} circular autoplayInterval={5000} itemTemplate={itemTemplate}/>
+      </div>
+    </div>
+    <div className="p-grid">
+      <div className="p-col">
+        <div>
+          <span>Deseas conocer lugares mágicos!</span>
+          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book</span>
+        </div>
+      </div>
+      <div className="p-col">
+        <lord-icon
+          src="https://cdn.lordicon.com/apuwlldu.json"
+          trigger="hover"
+          colors="primary:#121331,secondary:#08a88a"
+          style={{ width: '250px', height: '250px' }}>
+        </lord-icon>
+      </div>
+    </div>
+    <div className="p-grid">
+      <div className="p-col">
+        <lord-icon
+          src="https://cdn.lordicon.com/itmmouju.json"
+          trigger="hover"
+          colors="primary:#121331,secondary:#08a88a"
+          style={{ width: '250px', height: '250px' }}>
+        </lord-icon>
+      </div>
+      <div className="p-col">
+        <div><span>Da a concer tu establecimiento o evento!</span>
+          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book</span>
+        </div>
+      </div>
+    </div>
+    <div className="p-grid">
+      <div className="p-col">
+        <div>
+          <span>Juntos logramos más!</span>
+          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book</span>
+        </div>
+      </div>
+      <div className="p-col">
+        <lord-icon
+          src="https://cdn.lordicon.com/zpxybbhl.json"
+          trigger="hover"
+          colors="primary:#121331,secondary:#08a88a"
+          style={{ width: '250px', height: '250px' }}>
+        </lord-icon>
+      </div>
+    </div>
+  </React.Fragment>);
 };

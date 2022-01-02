@@ -16,6 +16,13 @@
     font-family: 'Pacifico', cursive;
 }
 
+.center-image-carousel{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    min-height: 100%;
+}
+
 @media (max-width: 600px) {
     .text-intro {
         font-size: 20px;

@@ -28,6 +28,7 @@ module.exports = {
     'operator-linebreak': 0,
     'multiline-ternary': 0,
     'space-before-function-paren': 0,
-    'react/prop-types': 0
+    'react/prop-types': 0,
+    'object-property-newline': 0
   }
 }

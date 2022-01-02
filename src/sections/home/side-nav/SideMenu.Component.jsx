@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './SideMenu.Component.css';
-import { MDBAnimation, MDBCol, MDBContainer, MDBLink, MDBRow } from 'mdbreact';
 import { addToHistory } from '../../../commons/utils/utils-routing';
 import { LOGIN_PATH } from '../../../commons/constants/paths.const';
 import { MainPageComponent } from '../main-page/MainPage.Component';
@@ -39,24 +38,23 @@ export const SideMenuComponent = () => {
   return (<div className={'flex-container'}>
     <div className={`sticky-side-menu ${isMenuOpen ? 'side-bar side-bar-show' : 'side-bar side-bar-hide'}`}>
       <div className={'profile-space'}>
-        {clickOnMenuOpen && <MDBContainer>
-          <MDBAnimation type={isMenuOpen ? 'fadeInLeft' : 'fadeOutLeft'}>
-            <MDBRow>
-              <MDBCol>
-                <img src='https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg'
-                     className='round-image mx-auto d-block' alt='aligment'/>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol>
-                <p className='text-center name-style'>Juan Sebastian Becerra</p>
-              </MDBCol>
-            </MDBRow>
-          </MDBAnimation>
-        </MDBContainer>}
+        {clickOnMenuOpen && <div>
+          <div>
+            <div>
+              <div>
+                <img src=''/>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p >Juan Sebastian Becerra</p>
+              </div>
+            </div>
+          </div>
+        </div>}
       </div>
       {itemsMenu.map((item, index) => <div className={'flex-container'} key={index}>
-        <MDBLink
+        <link
           to='#'
           className={`flex-container ${itemSelected === index ? 'item-active' : 'item-menu-style'}
                             ${item.isConfiguration ? 'configuration-item' : ''}`}
@@ -65,10 +63,10 @@ export const SideMenuComponent = () => {
             setItemSelected(index);
           }}>
           {item.icon}
-          {clickOnMenuOpen && <MDBAnimation
+          {clickOnMenuOpen && <div
             type={isMenuOpen ? 'fadeInLeft' : 'fadeOutLeft'}> {item.label}
-          </MDBAnimation>}
-        </MDBLink>
+          </div>}
+        </link>
         {itemSelected === index ?
           <div className={`selector-menu-box ${item.isConfiguration ? 'configuration-item' : ''}`}>
             <div className={'selector-menu-option'}>
@@ -79,7 +77,7 @@ export const SideMenuComponent = () => {
             </div>
           </div> : <span/>}
       </div>)}
-      <MDBLink
+      <link
         to='#'
         className={'flex-container item-menu-style'}
         onClick={() => {
@@ -87,10 +85,9 @@ export const SideMenuComponent = () => {
           dispatch(doLoginAsync());
         }}>
         <i className='fas fa-sign-out-alt'/>
-        {clickOnMenuOpen && <MDBAnimation
-          type={isMenuOpen ? 'fadeInLeft' : 'fadeOutLeft'}> {'Ta Luego'}
-        </MDBAnimation>}
-      </MDBLink>
+        {clickOnMenuOpen && <div> {'Ta Luego'}
+        </div>}
+      </link>
     </div>
     <div className={'main-container-full'}>
       {componentSelected}

@@ -20,39 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: change landing page&#10;feat: add background wave to Login component">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Isotipo_YACO.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/registration/descriptor/descriptor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/welcome-component/body-page/1953-african-culture-outline-edited.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/welcome-component/body-page/mocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Isotipo_YACO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/back.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/back_login.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/imagotipo_transparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/components/field-factory/FieldFactory.Labels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/components/field-factory/FieldFactory.Labels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/components/hooks/useFormField.hook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/components/hooks/useFormField.hook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/home/Home.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/home/Home.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/home/main-page/MainPage.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/home/main-page/MainPage.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/login/Login.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/login/Login.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/login/descriptor/descriptor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/login/descriptor/descriptor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/registration/Registrarion.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/registration/Registrarion.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/registration/Registrarion.Labels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/registration/RegistrationLabels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/sites/all-sites/AllSites.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/sites/all-sites/AllSites.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/sites/most-visited-sites/MostVisitedSites.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/sites/most-visited-sites/MostVisitedSites.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/sites/site-detail/SiteDetail.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/sites/site-detail/SiteDetail.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/Welcome.Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/Welcome.Component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/Welcome.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/Welcome.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/footer-page/FooterWelcome.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/footer-page/FooterWelcome.Component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sections/welcome-component/body-page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -109,6 +81,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="D:\YACO_v1.0.0\projects\web\yaco_web\src\sections\welcome-component\body-page" />
       <recent name="D:\YACO_v1.0.0\projects\web\yaco_web\src\assets\images" />
       <recent name="D:\YACO_v1.0.0\projects\web\yaco_web\src\sections\home\my-sites" />
@@ -359,7 +332,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: create welcome page with animations" />
@@ -377,53 +349,5 @@
     <MESSAGE value="feat: change login form to use custom hook" />
     <MESSAGE value="feat: change landing page&#10;feat: add background wave to Login component" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: change landing page&#10;feat: add background wave to Login component" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="397" y="101" key="#ESLint" timestamp="1633281175041">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="397" y="101" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1633281175041" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1635004734258">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1635004734258" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1629806032484">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1629806032484" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1637025586446">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1635033194218" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/1920.-129.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1637025586446" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1637025586446">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1635033194218" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center/1920.-129.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1637025586446" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1637025586446">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1635033194218" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left/1920.-129.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1637025586446" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1637025586446">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1635033194218" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right/1920.-129.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1637025586446" />
-    <state width="498" height="398" key="SwitcherDM" timestamp="1635005274102">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="498" height="398" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1635005274102" />
-    <state x="548" y="139" width="823" height="763" key="find.popup" timestamp="1636941068466">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1635004801581" />
-    <state x="548" y="139" width="823" height="763" key="find.popup/1920.-129.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1636941068466" />
-    <state x="486" y="70" width="946" height="971" key="search.everywhere.popup" timestamp="1637017448170">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="346" y="49" width="673" height="679" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1635006442649" />
-    <state x="486" y="70" width="946" height="971" key="search.everywhere.popup/1920.-129.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1637017448170" />
   </component>
 </project>

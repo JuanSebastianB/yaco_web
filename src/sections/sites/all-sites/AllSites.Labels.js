@@ -1,3 +1,1 @@
-export const AllSitesLabels = {
-
-};
+export const AllSitesLabels = {};

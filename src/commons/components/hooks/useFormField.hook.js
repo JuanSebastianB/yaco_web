@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const useFormField = (discriminator, initialState) => {
   const [objectForm, setObjectForm] = useState(initialState);
@@ -7,7 +7,11 @@ const useFormField = (discriminator, initialState) => {
       id: `id-field-${discriminator}-${properties.name}`,
       ...properties,
       value: objectForm[properties.value],
-      onChange: (event) => setObjectForm({ ...objectForm, [properties.name]: event.target ? event.target.value : event })
+      onChange: (event) =>
+        setObjectForm({
+          ...objectForm,
+          [properties.name]: event.target ? event.target.value : event,
+        }),
     };
   };
   return [objectForm, bind, setObjectForm];

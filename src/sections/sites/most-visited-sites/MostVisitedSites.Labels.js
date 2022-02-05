@@ -1,3 +1,1 @@
-export const MostVisitedSitesLabels = {
-
-};
+export const MostVisitedSitesLabels = {};

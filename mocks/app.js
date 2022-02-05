@@ -1,10 +1,10 @@
-const express = require('express');
-const apiMocker = require('connect-api-mocker');
+const express = require("express");
+const apiMocker = require("connect-api-mocker");
 
 const port = 9000;
 const app = express();
 
-app.use('/', apiMocker('mocks'));
+app.use("/", apiMocker("mocks"));
 
 console.log(`Mock API Server is up and running at: http://localhost:${port}`);
 app.listen(port);

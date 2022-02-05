@@ -1,25 +1,24 @@
-import { INPUT_TEXT_COMPONENT } from '../../../commons/components/field-factory/FieldFactory.Labels';
-import { LoginLabels, loginFormName } from '../Login.Labels';
+import { INPUT_TEXT_COMPONENT } from "../../../commons/components/field-factory/FieldFactory.Labels";
+import { LoginLabels, loginFormName } from "../Login.Labels";
 
 const INPUT_FIELD_NICKNAME = {
   type: INPUT_TEXT_COMPONENT,
   properties: {
     label: LoginLabels.yourNick,
-    placeholder: '',
+    placeholder: "",
     name: loginFormName.nickName,
-    value: ''
-  }
+    value: "",
+  },
 };
 
 const INPUT_FIELD_PASSWORD = {
   type: INPUT_TEXT_COMPONENT,
   properties: {
     label: LoginLabels.yourPassword,
-    placeholder: '',
+    placeholder: "",
     name: loginFormName.passwordName,
-    type: 'password'
-  }
+    type: "password",
+  },
 };
 
-export const LOGIN_FORM_DESCRIPTORS = [
-];
+export const LOGIN_FORM_DESCRIPTORS = [];

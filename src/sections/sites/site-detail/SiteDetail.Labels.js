@@ -1,3 +1,1 @@
-export const SiteDetailLabels = {
-
-};
+export const SiteDetailLabels = {};

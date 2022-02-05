@@ -1,7 +1,13 @@
-import { ALL_SITES, SHOW_SITE_DETAIL, SITE_SELECTED } from './all-sites.actions';
+import {
+  ALL_SITES,
+  SHOW_SITE_DETAIL,
+  SITE_SELECTED,
+} from "./all-sites.actions";
 
 const initialState = {
-  showDetailSiteFlag: false, allSites: [], siteSelected: {}
+  showDetailSiteFlag: false,
+  allSites: [],
+  siteSelected: {},
 };
 
 const allSitesReducers = (state = initialState, action = {}) => {

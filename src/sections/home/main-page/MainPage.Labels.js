@@ -1,3 +1,1 @@
-export const MainPageLabels = {
-
-};
+export const MainPageLabels = {};

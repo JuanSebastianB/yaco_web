@@ -1,5 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export const ConfigurationComponent = () => {
-  return (<h1>Soy la configuración</h1>);
+  return <h1>Soy la configuración</h1>;
 };

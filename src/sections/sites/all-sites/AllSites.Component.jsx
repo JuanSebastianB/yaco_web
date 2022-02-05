@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import './AllSites.Component.css';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import "./AllSites.Component.css";
 
 import {
-  getAllSiteAction, setShowSiteDetailFlagAction, setSiteSelectedAction
-} from '../../../store/sections/sites/all-sites/all-sites.actions';
+  getAllSiteAction,
+  setShowSiteDetailFlagAction,
+  setSiteSelectedAction,
+} from "../../../store/sections/sites/all-sites/all-sites.actions";
 
 export const AllSitesComponent = () => {
   const dispatch = useDispatch();
-  const allSites = useSelector(state => state.allSitesReducers.allSites);
+  const allSites = useSelector((state) => state.allSitesReducers.allSites);
 
   useEffect(() => {
     dispatch(getAllSiteAction());
@@ -19,6 +21,5 @@ export const AllSitesComponent = () => {
     dispatch(setSiteSelectedAction(siteSelected));
   };
 
-  return (<div>
-  </div>);
+  return <div></div>;
 };

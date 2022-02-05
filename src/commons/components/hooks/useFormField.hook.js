@@ -7,7 +7,7 @@ const useFormField = (discriminator, initialState) => {
       id: `id-field-${discriminator}-${properties.name}`,
       ...properties,
       value: objectForm[properties.value],
-      onChange: (event) => setObjectForm({ ...objectForm, [properties.name]: event.target.value })
+      onChange: (event) => setObjectForm({ ...objectForm, [properties.name]: event.target ? event.target.value : event })
     };
   };
   return [objectForm, bind, setObjectForm];

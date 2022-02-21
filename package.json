@@ -14,10 +14,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.4",
-    "crypto-js": "^4.0.0",
     "http-proxy-middleware": "^1.0.6",
-    "lord-icon-element": "^3.2.0",
-    "lottie-web": "^5.8.1",
     "primeflex": "^2.0.0",
     "primeicons": "^5.0.0",
     "primereact": "^7.2.0",
@@ -26,9 +23,7 @@
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
-    "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },
@@ -37,22 +32,21 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.0",
     "connect-api-mocker": "^1.9.0",
-    "eslint": "^7.2.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "express": "^4.17.1",
     "jest": "^26.6.0",
     "prettier": "2.5.1",
-    "redux-devtools-extension": "^2.13.8"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "redux-devtools-extension": "^2.13.8",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^4.9.2"
   },
   "browserslist": {
     "production": [

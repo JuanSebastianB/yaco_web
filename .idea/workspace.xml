@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: change landing page&#10;feat: add background wave to Login component">
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: add prettier to project">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sections/sites/all-sites/all-sites.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sections/sites/all-sites/all-sites.actions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,9 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -47,11 +51,8 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1e1Znq5ktNh5cz6WQEX1bWFhz6q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -64,7 +65,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="code.cleanup.on.save" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.25" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -72,12 +76,15 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/programs/node-v16.13.2-linux-x64/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -128,6 +135,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -217,6 +225,7 @@
       <workItem from="1635031365669" duration="1802000" />
       <workItem from="1636939749580" duration="1441000" />
       <workItem from="1636992634501" duration="10367000" />
+      <workItem from="1645400229830" duration="2403000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create welcome page with animations">
       <created>1593926068033</created>
@@ -316,11 +325,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621304366667</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: add prettier to project">
+      <created>1644094833504</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644094833504</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -348,6 +364,11 @@
     <MESSAGE value="feat: update react&#10;feat: add custom hook for forms&#10;feat: add eslint" />
     <MESSAGE value="feat: change login form to use custom hook" />
     <MESSAGE value="feat: change landing page&#10;feat: add background wave to Login component" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change landing page&#10;feat: add background wave to Login component" />
+    <MESSAGE value="feat: add prettier to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add prettier to project" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

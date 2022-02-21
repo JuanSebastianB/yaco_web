@@ -5,8 +5,7 @@ export const ALL_SITES = "ALL_SITES";
 export const SITE_SELECTED = "SITE_SELECTED";
 
 export const getAllSiteAction = () => (dispatch) => {
-  getAllSitesService()
-    .then((response) =>
+  getAllSitesService().then((response) =>
       // console.log(response.data)
       dispatch(setAllSiteAsync(response.data))
     )

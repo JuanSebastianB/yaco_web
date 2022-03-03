@@ -19,14 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: add prettier to project">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+    <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: change landing page&#10;feat: add background wave to Login component">
+      <change afterPath="$PROJECT_DIR$/config/webpack.common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sections/sites/all-sites/all-sites.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sections/sites/all-sites/all-sites.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/1953-african-culture-outline-edited.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" afterDir="false" />
     </list>
+    <list id="1481a2b7-3fcd-46ad-bd6c-a66a8b604e6c" name="Revert: " comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +80,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.eslint" value="D:\Projects\YACO_v1.0.0\projects\web\yaco_web\node_modules\eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/programs/node-v16.13.2-linux-x64/bin/node" />
@@ -135,7 +139,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -348,6 +352,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: create welcome page with animations" />
@@ -366,6 +371,32 @@
     <MESSAGE value="feat: change landing page&#10;feat: add background wave to Login component" />
     <MESSAGE value="feat: add prettier to project" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: add prettier to project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="397" y="101" key="#ESLint" timestamp="1646273408698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="397" y="101" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1646273408698" />
+    <state width="1345" height="178" key="GridCell.Tab.0.bottom" timestamp="1646273473562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1646273473562" />
+    <state width="1345" height="178" key="GridCell.Tab.0.center" timestamp="1646273473561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1646273473561" />
+    <state width="1345" height="178" key="GridCell.Tab.0.left" timestamp="1646273473560">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1646273473560" />
+    <state width="1345" height="178" key="GridCell.Tab.0.right" timestamp="1646273473562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1646273473562" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1646273754069">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1646273754069" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

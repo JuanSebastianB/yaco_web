@@ -1,14 +1,7 @@
 {
   "root": true,
-  "rules": {
-    "@typescript-eslint/strict-boolean-expressions": [
-      2,
-      {
-        "allowString": false,
-        "allowNumber": false
-      }
-    ]
-  },
+  "rules": {},
+  "parser": "babel-eslint",
   "ignorePatterns": [
     "src/**/*.test.ts"
   ]

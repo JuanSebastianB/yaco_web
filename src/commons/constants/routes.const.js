@@ -4,10 +4,10 @@ import {
   REGISTER_PATH,
   WELCOME_PATH,
 } from "./paths.const";
-import { WelcomeComponent } from "../../sections/welcome-component/Welcome.Component";
-import { LoginComponent } from "../../sections/login/Login.Component";
-import { RegistrationComponent } from "../../sections/registration/Registrarion.Component";
-import { HomeComponent } from "../../sections/home/Home.Component";
+import WelcomeComponent from "../../sections/welcome-component/Welcome.Component";
+import LoginComponent from "../../sections/login/Login.Component";
+import RegistrationComponent from "../../sections/registration/Registrarion.Component";
+import HomeComponent from "../../sections/home/Home.Component";
 
 export const routesConst = [
   { path: "/", component: WelcomeComponent },

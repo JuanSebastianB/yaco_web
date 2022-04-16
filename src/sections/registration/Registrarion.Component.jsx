@@ -1,17 +1,13 @@
 import React, { useEffect } from "react";
 import "./Registrarion.Component.css";
 import { RegistrationLabels } from "./RegistrationLabels";
-import { useHistory } from "react-router-dom";
-import { addToHistory } from "../../commons/utils/utils-routing";
-import { LOGIN_PATH } from "../../commons/constants/paths.const";
 import facebookIcon from "../../assets/icons/facebook.png";
 import gmailIcon from "../../assets/icons/gmail.png";
 import useFormField from "../../commons/components/hooks/useFormField.hook";
 import FieldFactoryComponent from "../../commons/components/field-factory/FieldFactory.Component";
 import { REGISTRATION_FORM_DESCRIPTOR } from "./descriptor/descriptor";
 
-export const RegistrationComponent = () => {
-  const history = useHistory();
+const RegistrationComponent = () => {
   const [
     registrationFormHook,
     bindRegistrationFormHook,
@@ -40,10 +36,7 @@ export const RegistrationComponent = () => {
                 </h4>
               </div>
               <div className={"center-content"}>
-                <button
-                  className={"button-style-login"}
-                  onClick={() => addToHistory(history, LOGIN_PATH)}
-                >
+                <button className={"button-style-login"} onClick={() => {}}>
                   {RegistrationLabels.login}
                 </button>
               </div>
@@ -93,3 +86,5 @@ export const RegistrationComponent = () => {
     </div>
   );
 };
+
+export default RegistrationComponent;

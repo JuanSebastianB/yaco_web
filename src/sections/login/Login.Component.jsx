@@ -2,17 +2,13 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Login.Component.css";
 import isotipoYACO from "../../assets/images/Isotipo_YACO.svg";
-import { addToHistory } from "../../commons/utils/utils-routing";
-import { HOME_PATH, REGISTER_PATH } from "../../commons/constants/paths.const";
-import { useHistory } from "react-router-dom";
 import { LoginLabels } from "./Login.Labels";
 import { doLoginAction } from "../../store/sections/login/login.actions";
 import { LOGIN_FORM_DESCRIPTORS } from "./descriptor/descriptor";
 import useFormField from "../../commons/components/hooks/useFormField.hook";
 import FieldFactoryComponent from "../../commons/components/field-factory/FieldFactory.Component";
 
-export const LoginComponent = () => {
-  const history = useHistory();
+const LoginComponent = () => {
   const dispatch = useDispatch();
   const validationStatus = useSelector(
     (state) => state.loginReducers.validationStatus
@@ -23,7 +19,7 @@ export const LoginComponent = () => {
   );
 
   useEffect(() => {
-    validationStatus && addToHistory(history, HOME_PATH);
+    // validationStatus && addToHistory(history, HOME_PATH);
   }, [validationStatus]);
 
   return (
@@ -76,7 +72,7 @@ export const LoginComponent = () => {
                   <a
                     href="#"
                     className="ml-1 color-text-green-yaco"
-                    onClick={() => addToHistory(history, REGISTER_PATH)}
+                    onClick={() => {}}
                   >
                     {LoginLabels.registerOption}
                   </a>
@@ -89,3 +85,5 @@ export const LoginComponent = () => {
     </div>
   );
 };
+
+export default LoginComponent;

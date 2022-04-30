@@ -19,16 +19,59 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: change landing page&#10;feat: add background wave to Login component">
-      <change afterPath="$PROJECT_DIR$/config/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="5647eba7-ff07-4822-9c58-21ff88699836" name="Default Changelist" comment="feat: add configuration for mocks server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/1953-african-culture-outline-edited.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/components/field-factory/FieldFactory.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/components/field-factory/FieldFactory.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/components/field-factory/FieldFactory.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/components/hooks/useFormField.hook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/constants/paths.const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/constants/paths.const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/constants/routes.const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/constants/routes.const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/Configuration.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/Home.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/main-page/MainPage.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/main-page/MainPage.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/main-page/MainPage.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/home/side-nav/SideMenu.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/login/Login.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/login/Login.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/login/Login.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/login/descriptor/descriptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/registration/Registrarion.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/registration/Registrarion.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/registration/RegistrationLabels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/registration/descriptor/descriptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/all-sites/AllSites.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/all-sites/AllSites.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/all-sites/AllSites.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/most-visited-sites/MostVisitedSites.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/most-visited-sites/MostVisitedSites.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/most-visited-sites/MostVisitedSites.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/my-sites/MySites.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/site-detail/SiteDetail.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/site-detail/SiteDetail.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/sites/site-detail/SiteDetail.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/Welcome.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/Welcome.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/BodyWelcome.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/body-page/mocks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/footer-page/FooterWelcome.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/footer-page/FooterWelcome.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome-component/header-page/HeaderWelcome.Labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/commons/paths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/commons/wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/login/login.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/site/site.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sections/login/login.actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sections/login/login.reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sections/sites/all-sites/all-sites.actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sections/sites/all-sites/all-sites.reducers.js" beforeDir="false" />
     </list>
     <list id="1481a2b7-3fcd-46ad-bd6c-a66a8b604e6c" name="Revert: " comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +98,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -72,7 +123,7 @@
     <property name="code.cleanup.on.save" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.2" />
-    <property name="javascript.nodejs.core.library.typings.version" value="16.11.25" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.27" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -80,14 +131,14 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="D:\Projects\YACO_v1.0.0\projects\web\yaco_web\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/programs/node-v16.13.2-linux-x64/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -139,7 +190,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -230,6 +281,11 @@
       <workItem from="1636939749580" duration="1441000" />
       <workItem from="1636992634501" duration="10367000" />
       <workItem from="1645400229830" duration="2403000" />
+      <workItem from="1650063529026" duration="2237000" />
+      <workItem from="1650128018370" duration="3769000" />
+      <workItem from="1650135209271" duration="7286000" />
+      <workItem from="1650244052186" duration="3076000" />
+      <workItem from="1651352102296" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create welcome page with animations">
       <created>1593926068033</created>
@@ -336,7 +392,35 @@
       <option name="project" value="LOCAL" />
       <updated>1644094833504</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: remove react scripts">
+      <created>1650063761014</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1650063761014</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: add file to gitignore">
+      <created>1650128357933</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1650128357933</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: add configuration for webpack&#10;fix: delete bugs on load application">
+      <created>1650148805264</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1650148805264</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: add configuration for mocks server">
+      <created>1650247392828</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1650247392828</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +436,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: create welcome page with animations" />
@@ -370,33 +453,11 @@
     <MESSAGE value="feat: change login form to use custom hook" />
     <MESSAGE value="feat: change landing page&#10;feat: add background wave to Login component" />
     <MESSAGE value="feat: add prettier to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add prettier to project" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="397" y="101" key="#ESLint" timestamp="1646273408698">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="397" y="101" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1646273408698" />
-    <state width="1345" height="178" key="GridCell.Tab.0.bottom" timestamp="1646273473562">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1646273473562" />
-    <state width="1345" height="178" key="GridCell.Tab.0.center" timestamp="1646273473561">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1646273473561" />
-    <state width="1345" height="178" key="GridCell.Tab.0.left" timestamp="1646273473560">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1646273473560" />
-    <state width="1345" height="178" key="GridCell.Tab.0.right" timestamp="1646273473562">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1646273473562" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1646273754069">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1646273754069" />
+    <MESSAGE value="fix: remove react scripts" />
+    <MESSAGE value="feat: add file to gitignore" />
+    <MESSAGE value="feat: add configuration for webpack&#10;fix: delete bugs on load application" />
+    <MESSAGE value="feat: add configuration for mocks server" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add configuration for mocks server" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,27 +2,60 @@
   "name": "yaco_web",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "mdbreact": "^4.27.0",
-    "react": "^16.13.1",
-    "react-day-picker": "^7.4.8",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack serve --open --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.prod.js",
+    "test": "jest"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.4",
+    "http-proxy-middleware": "^1.0.6",
+    "primeflex": "^2.0.0",
+    "primeicons": "^5.0.0",
+    "primereact": "^7.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-transition-group": "^4.4.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@types/react": "^17.0.5",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.0",
+    "babel-loader": "^8.2.4",
+    "connect-api-mocker": "^1.10.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^26.6.0",
+    "prettier": "2.5.1",
+    "redux-devtools-extension": "^2.13.8",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "webpack-merge": "^5.8.0"
   },
   "browserslist": {
     "production": [
@@ -35,8 +68,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "jest": "^24.9.0"
   }
 }

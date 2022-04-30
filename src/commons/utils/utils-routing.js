@@ -1,1 +1,1 @@
-export const addToHistory = (history,path) => history.push(path);
+export const addToHistory = (history, path) => history.push(path);

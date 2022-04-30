@@ -1,0 +1,6 @@
+# Ignore artifacts:
+build
+coverage
+
+#format html files
+*.html

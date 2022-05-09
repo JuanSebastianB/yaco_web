@@ -2,6 +2,8 @@ import React from "react";
 import "./landing.component.css";
 import { Button } from "primereact/button";
 import { Image } from "primereact/image";
+import yacoLogo from "../../../public/assets/images/Isotipo_YACO.svg";
+import LogoYaco from "../../commons/logo-yaco.component";
 
 const LandingComponent = () => {
   //TODO -> solve not load images, alternative for the moment appear the alt value on images
@@ -11,7 +13,7 @@ const LandingComponent = () => {
       <div className="grid">
         <div className="col">
           <div className="card-container flex align-items-center justify-content-between">
-            <Image src="../../assets/images/Isotipo_YACO.svg" alt="Logo YACO" />
+            <Image src={yacoLogo} alt="Logo YACO" width="150" />
             <div className="card-container size-container-buttons flex align-items-center justify-content-evenly">
               <Button
                 label="Ingresar"
@@ -34,7 +36,8 @@ const LandingComponent = () => {
           </p>
         </div>
         <div className="col-6">
-          <Image src="../../assets/images/Isotipo_YACO.svg" alt="Logo YACO" />
+          <LogoYaco/>
+          {/*<Image src={yacoLogo} alt="Logo YACO" />*/}
         </div>
       </div>
     </div>

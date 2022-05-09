@@ -20,17 +20,8 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.color-green-background {
+.color-green-YACO {
     background-color: #388e3c;
-}
-
-.color-test-background {
-    background-color: red;
-}
-
-.back-color-transparent {
-    background-color: transparent !important;
 }
 
 .icon-back-screen {

@@ -1,37 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
-.background-wave-bottom-yaco {
-    display: flex;
-    height: 100vh;
-    background-image: url(./assets/images/wave-yaco.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
+:root {
+    --main-yaco-color: #388e3c;
 }
 
+/*
+.background-wave-bottom-yaco {
+  display: flex;
+  height: 100vh;
+  background-image: url(./assets/images/wave-yaco.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+*/
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.background-green-YACO {
+  background-color: var(--main-yaco-color) !important;
+  border-color: var(--main-yaco-color) !important;
+}
 .color-green-YACO {
-    background-color: #388e3c;
+  color: var(--main-yaco-color) !important;
 }
 
 .icon-back-screen {
-    margin: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 .icon-back-screen:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .pointer-cursor:hover {
-    cursor: pointer;
+  cursor: pointer;
 }

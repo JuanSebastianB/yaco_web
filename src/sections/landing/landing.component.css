@@ -1,3 +1,19 @@
-.size-container-buttons{
-    min-width: 20%;
+.size-container-buttons {
+  min-width: 20%;
+}
+
+.space-sides-text {
+  padding-left: 5rem;
+  text-align: justify;
+}
+
+.text-catch-style {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.text-catch-style:hover {
+  transform: scale(1.15);
+  transition: all 0.5s;
 }

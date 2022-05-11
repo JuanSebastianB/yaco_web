@@ -2,7 +2,5 @@
   "root": true,
   "rules": {},
   "parser": "babel-eslint",
-  "ignorePatterns": [
-    "src/**/*.test.ts"
-  ]
+  "ignorePatterns": ["src/**/*.test.ts"]
 }

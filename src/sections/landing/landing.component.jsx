@@ -1,10 +1,10 @@
-import React from "react";
-import "./landing.component.css";
-import { Button } from "primereact/button";
-import { Image } from "primereact/image";
-import yacoLogoSVG from "../../../public/assets/images/Isotipo_YACO.svg";
-import yacoImagotipePNG from "../../../public/assets/images/imagotipo_transparency.png";
-import LogoYaco from "../../commons/logo-yaco.component";
+import React from 'react';
+import './landing.component.css';
+import { Button } from 'primereact/button';
+import { Image } from 'primereact/image';
+import yacoLogoSVG from '../../../public/assets/images/Isotipo_YACO.svg';
+import yacoImagotipePNG from '../../../public/assets/images/imagotipo_transparency.png';
+import LogoYaco from '../../commons/logo-yaco.component';
 
 const LandingComponent = () => {
   //TODO -> solve not load images, alternative for the moment appear the alt value on images
@@ -30,7 +30,7 @@ const LandingComponent = () => {
       </div>
       <div className="grid">
         <div className="col-6 center-vertical-text">
-          <p className={"space-sides-text"}>
+          <p className={'space-sides-text'}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -45,7 +45,9 @@ const LandingComponent = () => {
       </div>
       <div className="grid">
         <div className="col background-main-YACO">
-          <h3 className={'text-catch-style cursor-pointer'}>Encuentra lugares increibles!</h3>
+          <h3 className={'text-catch-style cursor-pointer'}>
+            Encuentra lugares increibles!
+          </h3>
         </div>
       </div>
       <div className="grid">

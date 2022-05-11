@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+.font-ole-google{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 5rem;
+}
+
+.font-indie-google{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+}
+
+.font-noto-google{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+}
+
 .size-container-buttons {
     min-width: 20%;
 }
@@ -20,4 +37,17 @@
 
 .pi.size-icon-landing {
     font-size: 4em;
+}
+
+.color-gray{
+    color: gray;
+}
+
+.pi.size-icon-footer {
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.add-space-right{
+    margin-right: 10%;
 }

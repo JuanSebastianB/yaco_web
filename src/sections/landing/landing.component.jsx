@@ -5,6 +5,15 @@ import { Image } from 'primereact/image';
 import yacoLogoSVG from '../../../public/assets/images/Isotipo_YACO.svg';
 import yacoImagotipePNG from '../../../public/assets/images/imagotipo_transparency.png';
 import LogoYaco from '../../commons/logo-yaco.component';
+import { fadeIn } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
+
+const myStyles = {
+  fadeIn: {
+    animation: 'x 3s',
+    animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+  },
+};
 
 const LandingComponent = () => {
   //TODO -> solve not load images, alternative for the moment appear the alt value on images
@@ -28,30 +37,38 @@ const LandingComponent = () => {
           </div>
         </div>
       </div>
-      <div className="grid">
-        <div className="col-6 center-vertical-text">
-          <h1 className={"center-text"}>
-            Anímese a conocer la tierrita sumercé!
-          </h1>
+      <StyleRoot>
+        <div className="grid">
+          <div className="col-6 center-vertical-text">
+            <h1
+              className={'font-ole-google center-text'}
+              style={myStyles.fadeIn}
+            >
+              Anímese a conocer la tierrita sumercé!
+            </h1>
+          </div>
+          <div className="col-6" style={myStyles.fadeIn}>
+            <LogoYaco />
+          </div>
         </div>
-        <div className="col-6">
-          <LogoYaco />
-        </div>
-      </div>
+      </StyleRoot>
       <div className="grid">
         <div className="col background-main-YACO">
-          <h3 className={"text-catch-style cursor-pointer"}>
+          <h3 className={'text-catch-style cursor-pointer'}>
             Encuentra lugares increibles!
           </h3>
         </div>
       </div>
-      <div className={"top-space"}>
+      <div className={'top-space'}>
         <div className="grid">
           <div className="col-6">
-            <h1 className={"center-text"}>Pa' que se anime</h1>
+            <h1 className={'font-ole-google center-text'}>Pa' que se anime</h1>
           </div>
           <div className="col-6">
-            <p className={"space-sides-text"}>
+            <p
+              className={'font-indie-google space-sides-text add-space-right'}
+              style={myStyles.fadeIn}
+            >
               Los mejores lugares y eventos donde pasar unos momentos mágicos
               estan a tu disposición, solo necesitas conocerlos y ayudar a otras
               personas a que lo conozcan. Date la oportuniad de crear los
@@ -60,11 +77,11 @@ const LandingComponent = () => {
           </div>
         </div>
       </div>
-      <div className={"top-space"}>
+      <div className={'top-space'}>
         <div className="grid">
           <div className="col-4 center-text">
             <i className="pi pi-search size-icon-landing" />
-            <h2>Buscar</h2>
+            <h2>Busca</h2>
           </div>
           <div className="col-4 center-text">
             <i className="pi pi-plus-circle size-icon-landing" />
@@ -76,20 +93,26 @@ const LandingComponent = () => {
           </div>
         </div>
       </div>
-      <div className={"top-space"}>
+      <div className={'top-space'}>
         <div className="grid">
           <div className="col background-contrast-YACO">
             <div className="grid">
-              <div className="col-4">
+              <div className="col-4 center-text">
                 <Image src={yacoImagotipePNG} alt="Logo YACO" width="250" />
               </div>
-              <div className="col-4">
-                <div>Telefono: 304 531 48 34</div>
-                <div> correo: contactanos@yaco.com</div>
+              <div className="col-4 font-noto-google center-vertical-text">
                 <div>
-                  <i className="pi pi-facebook" />
-                  <i className="pi pi-twitter" />
-                  <i className="pi pi-instagram" />
+                  <div>
+                    <strong>Teléfono: </strong>304 531 48 34
+                  </div>
+                  <div>
+                    <strong>E-mail: </strong>contactanos@yaco.com
+                  </div>
+                  <div>
+                    <i className="pi pi-facebook size-icon-footer cursor-pointer" />
+                    <i className="pi pi-twitter size-icon-footer cursor-pointer" />
+                    <i className="pi pi-instagram size-icon-footer cursor-pointer" />
+                  </div>
                 </div>
               </div>
             </div>

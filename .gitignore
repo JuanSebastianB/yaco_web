@@ -13,8 +13,7 @@
 /build
 
 #IDE files
-.idea
-.idea/workspace.xml
+/.idea
 
 # misc
 .DS_Store
@@ -29,3 +28,6 @@ yarn-error.log*
 
 
 
+/.idea/
+/dist
+.idea/workspace.xml

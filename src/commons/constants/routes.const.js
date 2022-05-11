@@ -1,5 +1,3 @@
-import React from "react";
+import LandingComponent from '../../sections/landing/landing.component';
 
-const RenderTestComponent = () => <h1>Hola, bienvenido a YACO!</h1>;
-
-export const routesConst = [{ path: "/", component: RenderTestComponent }];
+export const routesConst = [{ path: '/', component: LandingComponent }];

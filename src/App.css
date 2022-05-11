@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+    --main-yaco-color: #388e3c;
+}
 
-.background-wave-bottom-yaco {
-    display: flex;
-    height: 100vh;
-    background-image: url(./assets/images/wave-yaco.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
+:root {
+    --main-yaco-color: #388e3c;
+    --secondary-yaco-color: #388e3c;
+    --contrast-yaco-color: #f0f0f0;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 code {
@@ -21,26 +22,40 @@ code {
     monospace;
 }
 
-.color-green-background {
-    background-color: #388e3c;
+.background-main-YACO {
+    background-color: var(--main-yaco-color) !important;
+    border-color: var(--main-yaco-color) !important;
 }
 
-.color-test-background {
-    background-color: red;
+.background-contrast-YACO {
+    background-color: var(--contrast-yaco-color) !important;
+    border-color: var(--contrast-yaco-color) !important;
 }
 
-.back-color-transparent {
-    background-color: transparent !important;
+.color-main-YACO {
+    color: var(--main-yaco-color) !important;
 }
 
-.icon-back-screen {
-    margin: 20px 0 20px 0;
-}
-
-.icon-back-screen:hover {
+.cursor-pointer:hover {
     cursor: pointer;
 }
 
-.pointer-cursor:hover {
-    cursor: pointer;
+svg,
+p {
+    width: fit-content;
+    height: fit-content;
+}
+
+.center-vertical-text {
+    display: flex;
+    align-items: center;
+}
+
+.top-space {
+    margin-top: 5rem;
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
 }

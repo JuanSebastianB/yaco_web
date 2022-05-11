@@ -5,6 +5,7 @@
   "scripts": {
     "start": "webpack serve --open --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
     "test": "jest"
   },
   "dependencies": {
@@ -13,11 +14,13 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.4",
     "http-proxy-middleware": "^1.0.6",
-    "primeflex": "^2.0.0",
+    "primeflex": "^3.0.0",
     "primeicons": "^5.0.0",
     "primereact": "^7.2.0",
     "prop-types": "^15.7.2",
+    "radium": "^0.26.2",
     "react": "^17.0.1",
+    "react-animations": "^1.0.0",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^6.3.0",

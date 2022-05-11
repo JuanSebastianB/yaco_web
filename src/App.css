@@ -3,46 +3,59 @@
 }
 
 :root {
-  --main-yaco-color: #388e3c;
-  --secondary-yaco-color: #388e3c;
-  --contrast-yaco-color: #f0f0f0;
+    --main-yaco-color: #388e3c;
+    --secondary-yaco-color: #388e3c;
+    --contrast-yaco-color: #f0f0f0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .background-main-YACO {
-  background-color: var(--main-yaco-color) !important;
-  border-color: var(--main-yaco-color) !important;
+    background-color: var(--main-yaco-color) !important;
+    border-color: var(--main-yaco-color) !important;
 }
+
 .background-contrast-YACO {
-  background-color: var(--contrast-yaco-color) !important;
-  border-color: var(--contrast-yaco-color) !important;
+    background-color: var(--contrast-yaco-color) !important;
+    border-color: var(--contrast-yaco-color) !important;
 }
+
 .color-main-YACO {
-  color: var(--main-yaco-color) !important;
+    color: var(--main-yaco-color) !important;
 }
 
-.cursor-pointer:hover{
-  cursor: pointer;
+.cursor-pointer:hover {
+    cursor: pointer;
 }
 
-svg, p {
-  width: fit-content;
-  height: fit-content;
+svg,
+p {
+    width: fit-content;
+    height: fit-content;
 }
 
-.center-vertical-text{
-  display: flex;
-  align-items: center;
+.center-vertical-text {
+    display: flex;
+    align-items: center;
+}
+
+.top-space {
+    margin-top: 5rem;
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
 }

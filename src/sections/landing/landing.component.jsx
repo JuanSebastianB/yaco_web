@@ -14,7 +14,7 @@ const LandingComponent = () => {
       <div className="grid">
         <div className="col">
           <div className="card-container flex align-items-center justify-content-between">
-            <Image src={yacoLogoSVG} alt="Logo YACO" width="150" />
+            <Image src={yacoLogoSVG} alt="Logo YACO" width="100" />
             <div className="card-container size-container-buttons flex align-items-center justify-content-evenly">
               <Button
                 label="Registrarse"
@@ -30,14 +30,9 @@ const LandingComponent = () => {
       </div>
       <div className="grid">
         <div className="col-6 center-vertical-text">
-          <p className={'space-sides-text'}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in
-          </p>
+          <h1 className={"center-text"}>
+            Anímese a conocer la tierrita sumercé!
+          </h1>
         </div>
         <div className="col-6">
           <LogoYaco />
@@ -45,14 +40,60 @@ const LandingComponent = () => {
       </div>
       <div className="grid">
         <div className="col background-main-YACO">
-          <h3 className={'text-catch-style cursor-pointer'}>
+          <h3 className={"text-catch-style cursor-pointer"}>
             Encuentra lugares increibles!
           </h3>
         </div>
       </div>
-      <div className="grid">
-        <div className="col background-contrast-YACO">
-          <Image src={yacoImagotipePNG} alt="Logo YACO" width="250" />
+      <div className={"top-space"}>
+        <div className="grid">
+          <div className="col-6">
+            <h1 className={"center-text"}>Pa' que se anime</h1>
+          </div>
+          <div className="col-6">
+            <p className={"space-sides-text"}>
+              Los mejores lugares y eventos donde pasar unos momentos mágicos
+              estan a tu disposición, solo necesitas conocerlos y ayudar a otras
+              personas a que lo conozcan. Date la oportuniad de crear los
+              mejores recuerdos y conocer la tierrita.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={"top-space"}>
+        <div className="grid">
+          <div className="col-4 center-text">
+            <i className="pi pi-search size-icon-landing" />
+            <h2>Buscar</h2>
+          </div>
+          <div className="col-4 center-text">
+            <i className="pi pi-plus-circle size-icon-landing" />
+            <h2>Publica</h2>
+          </div>
+          <div className="col-4 center-text">
+            <i className="pi pi-map-marker size-icon-landing" />
+            <h2>Conoce</h2>
+          </div>
+        </div>
+      </div>
+      <div className={"top-space"}>
+        <div className="grid">
+          <div className="col background-contrast-YACO">
+            <div className="grid">
+              <div className="col-4">
+                <Image src={yacoImagotipePNG} alt="Logo YACO" width="250" />
+              </div>
+              <div className="col-4">
+                <div>Telefono: 304 531 48 34</div>
+                <div> correo: contactanos@yaco.com</div>
+                <div>
+                  <i className="pi pi-facebook" />
+                  <i className="pi pi-twitter" />
+                  <i className="pi pi-instagram" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>

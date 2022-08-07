@@ -1,7 +1,13 @@
-.background-wave {
-  }
-
 .size-logo-login{
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.space-input-login.space-input-login{
+  margin-bottom: 1.5rem;
+}
+
+.pi.size-icon-login{
+  font-size: 2em;
+  margin: 0 10px;
 }

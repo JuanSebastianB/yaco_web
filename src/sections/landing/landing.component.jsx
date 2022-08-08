@@ -8,7 +8,11 @@ import LogoYaco from '../../commons/logo-yaco.component';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import { useNavigate } from 'react-router-dom';
-import { LOGIN_PATH, REGISTER_PATH, SITES_PATH } from '../../commons/constants/paths.const';
+import {
+  LOGIN_PATH,
+  REGISTER_PATH,
+  SITES_PATH,
+} from '../../commons/constants/paths.const';
 
 const myStyles = {
   fadeIn: {
@@ -37,7 +41,7 @@ const LandingComponent = () => {
                 label="Ingresar"
                 className="p-button-raised background-main-YACO"
                 onClick={() => navigate(LOGIN_PATH)}
-                />
+              />
             </div>
           </div>
         </div>

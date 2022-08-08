@@ -1,13 +1,19 @@
 import React from 'react';
 import './login.component.css';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import LogoYaco from '../../commons/logo-yaco.component';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
+import { HOME_PATH, REGISTER_PATH } from '../../commons/constants/paths.const';
 
 const LoginComponent = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState('');
+  const [password, setPassword] = useState('');
   return (
     <React.Fragment>
-      <div className="grid background-wave">
+      <div className="grid">
         <div className="col center-item">
           <div className={'size-logo-login'}>
             <LogoYaco />
@@ -21,8 +27,8 @@ const LoginComponent = () => {
               <span className="p-float-label p-input-icon-right">
                 <InputText
                   id="input-identificator"
-                  value={''}
-                  onChange={(e) => {}}
+                  value={user}
+                  onChange={(event) => setUser(event.target.value)}
                 />
                 <label htmlFor="input-identificator">
                   <i className="pi pi-user" /> Usuario o correo
@@ -34,8 +40,9 @@ const LoginComponent = () => {
                 <i className="pi pi-eye" />
                 <InputText
                   id="input-password"
-                  value={''}
-                  onChange={(e) => {}}
+                  type="password"
+                  value={password}
+                  onChange={(event) => setPassword(event.target.value)}
                 />
                 <label htmlFor="input-password">
                   <i className="pi pi-lock" /> Contraseña
@@ -45,6 +52,7 @@ const LoginComponent = () => {
             <div className={'center-text space-input-login'}>
               <Button
                 label="Ingresar"
+                onClick={() => navigate(HOME_PATH)}
                 className="p-button-rounded p-button-success background-main-YACO"
               />
             </div>
@@ -53,8 +61,9 @@ const LoginComponent = () => {
                 Olvide mi contraseña
               </span>
             </div>
-            <div className={'center-text space-input-login'}> 
-              <span className="link-text-style cursor-pointer">
+            <div className={'center-text space-input-login'}>
+              <span className="link-text-style cursor-pointer"
+              onClick={() => navigate(REGISTER_PATH)}>
                 Registrarme
               </span>
             </div>

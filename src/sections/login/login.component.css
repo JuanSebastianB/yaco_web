@@ -11,3 +11,17 @@
   font-size: 2em;
   margin: 0 10px;
 }
+
+.bubble::after {
+  content: '';
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: var(--contrast-yaco-color);
+  height: 100%;
+}

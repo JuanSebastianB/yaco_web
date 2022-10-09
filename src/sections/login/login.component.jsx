@@ -13,11 +13,9 @@ const LoginComponent = () => {
   const [password, setPassword] = useState('');
   return (
     <React.Fragment>
-      <div className="grid">
-        <div className="col center-item">
-          <div className={'size-logo-login'}>
+      <div className="grid center-item">
+        <div className="col center-item size-logo-login">
             <LogoYaco />
-          </div>
         </div>
       </div>
       <div className="grid">

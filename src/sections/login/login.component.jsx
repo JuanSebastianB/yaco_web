@@ -62,8 +62,10 @@ const LoginComponent = () => {
               </span>
             </div>
             <div className={'center-text space-input-login'}>
-              <span className="link-text-style cursor-pointer"
-              onClick={() => navigate(REGISTER_PATH)}>
+              <span
+                className="link-text-style cursor-pointer"
+                onClick={() => navigate(REGISTER_PATH)}
+              >
                 Registrarme
               </span>
             </div>

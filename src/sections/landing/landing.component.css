@@ -51,3 +51,8 @@
 .add-space-right{
     margin-right: 10%;
 }
+
+.size-logo-login{
+    max-width: 30%;
+    max-height: 30%;
+}

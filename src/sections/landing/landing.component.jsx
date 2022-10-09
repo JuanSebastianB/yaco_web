@@ -57,7 +57,7 @@ const LandingComponent = () => {
             </h1>
           </div>
           <div className="col-6" style={myStyles.fadeIn}>
-            <LogoYaco />
+            <LogoYaco/>
           </div>
         </div>
       </StyleRoot>

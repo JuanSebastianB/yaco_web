@@ -1,21 +1,24 @@
 import React from 'react';
 import './login.component.css';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LogoYaco from '../../commons/logo-yaco.component';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { HOME_PATH, REGISTER_PATH } from '../../commons/constants/paths.const';
+import { doLoginAction } from '../../store/sections/login/login.actions';
 
 const LoginComponent = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   return (
     <React.Fragment>
       <div className="grid center-item">
         <div className="col center-item size-logo-login">
-            <LogoYaco />
+          <LogoYaco />
         </div>
       </div>
       <div className="grid">
@@ -50,7 +53,10 @@ const LoginComponent = () => {
             <div className={'center-text space-input-login'}>
               <Button
                 label="Ingresar"
-                onClick={() => navigate(HOME_PATH)}
+                onClick={() => {
+                  dispatch(doLoginAction(user, password));
+                  navigate(HOME_PATH);
+                }}
                 className="p-button-rounded p-button-success background-main-YACO"
               />
             </div>

@@ -7,6 +7,12 @@ import yacoImagotipePNG from '../../../public/assets/images/imagotipo_transparen
 import LogoYaco from '../../commons/logo-yaco.component';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
+import { useNavigate } from 'react-router-dom';
+import {
+  LOGIN_PATH,
+  REGISTER_PATH,
+  SITES_PATH,
+} from '../../commons/constants/paths.const';
 
 const myStyles = {
   fadeIn: {
@@ -16,6 +22,7 @@ const myStyles = {
 };
 
 const LandingComponent = () => {
+  const navigate = useNavigate();
   //TODO -> solve not load images, alternative for the moment appear the alt value on images
   //TODO -> move assets to public folder
   return (
@@ -28,10 +35,12 @@ const LandingComponent = () => {
               <Button
                 label="Registrarse"
                 className="p-button-raised p-button-text color-main-YACO"
+                onClick={() => navigate(REGISTER_PATH)}
               />
               <Button
                 label="Ingresar"
                 className="p-button-raised background-main-YACO"
+                onClick={() => navigate(LOGIN_PATH)}
               />
             </div>
           </div>
@@ -48,13 +57,16 @@ const LandingComponent = () => {
             </h1>
           </div>
           <div className="col-6" style={myStyles.fadeIn}>
-            <LogoYaco />
+            <LogoYaco/>
           </div>
         </div>
       </StyleRoot>
       <div className="grid">
         <div className="col background-main-YACO">
-          <h3 className={'text-catch-style cursor-pointer'}>
+          <h3
+            className={'text-catch-style cursor-pointer'}
+            onClick={() => navigate(SITES_PATH)}
+          >
             Encuentra lugares increibles!
           </h3>
         </div>

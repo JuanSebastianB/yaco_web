@@ -1,9 +1,5 @@
 :root {
     --main-yaco-color: #388e3c;
-}
-
-:root {
-    --main-yaco-color: #388e3c;
     --secondary-yaco-color: #388e3c;
     --contrast-yaco-color: #f0f0f0;
 }
@@ -58,4 +54,13 @@ p {
 .center-text {
     width: 100%;
     text-align: center;
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+}
+
+.link-text-style{
+    color: blue;
 }

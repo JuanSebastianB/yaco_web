@@ -33,7 +33,7 @@ const LandingComponent = () => {
             <Image src={yacoLogoSVG} alt="Logo YACO" width="100" />
             <div className="card-container size-container-buttons flex align-items-center justify-content-evenly">
               <Button
-                label="Registrarse hola"
+                label="Registrarse hola mas"
                 className="p-button-raised p-button-text color-main-YACO"
                 onClick={() => navigate(REGISTER_PATH)}
               />

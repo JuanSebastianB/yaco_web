@@ -23,8 +23,6 @@ const myStyles = {
 
 const LandingComponent = () => {
   const navigate = useNavigate();
-  //TODO -> solve not load images, alternative for the moment appear the alt value on images
-  //TODO -> move assets to public folder
   return (
     <React.Fragment>
       <div className="grid">

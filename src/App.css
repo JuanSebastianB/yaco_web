@@ -1,6 +1,13 @@
+html, body {
+    height: 100vh;
+}
+
+#root {
+    height: 100vh;
+}
+
 :root {
     --main-yaco-color: #388e3c;
-    --secondary-yaco-color: #388e3c;
     --contrast-yaco-color: #f0f0f0;
 }
 
@@ -11,6 +18,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    margin: 0;
 }
 
 code {
@@ -42,7 +50,7 @@ p {
     height: fit-content;
 }
 
-.center-vertical-text {
+.center-vertical-item {
     display: flex;
     align-items: center;
 }
@@ -61,6 +69,6 @@ p {
     justify-content: center;
 }
 
-.link-text-style{
+.link-text-style {
     color: blue;
 }

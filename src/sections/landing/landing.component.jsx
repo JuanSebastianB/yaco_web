@@ -46,7 +46,7 @@ const LandingComponent = () => {
       </div>
       <StyleRoot>
         <div className="grid">
-          <div className="col-6 center-vertical-text">
+          <div className="col-6 center-vertical-item">
             <h1
               className={'font-ole-google center-text'}
               style={myStyles.fadeIn}
@@ -110,7 +110,7 @@ const LandingComponent = () => {
               <div className="col-4 center-text">
                 <Image src={yacoImagotipePNG} alt="Logo YACO" width="250" />
               </div>
-              <div className="col-4 font-noto-google center-vertical-text">
+              <div className="col-4 font-noto-google center-vertical-item">
                 <div>
                   <div>
                     <strong>Teléfono: </strong>304 531 48 34

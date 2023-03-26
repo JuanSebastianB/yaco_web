@@ -10,7 +10,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     port: 3000,
     onBeforeSetupMiddleware: ({ app }) => {
-      app.use(apiMocker('/person', 'mocks/person'));
+      app.use(apiMocker('/login', 'mocks/login'));
     },
   },
 });

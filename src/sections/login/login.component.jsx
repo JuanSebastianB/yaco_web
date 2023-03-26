@@ -3,11 +3,12 @@ import './login.component.css';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import LogoYaco from '../../commons/logo-yaco.component';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-import { HOME_PATH, REGISTER_PATH } from '../../commons/constants/paths.const';
+import { REGISTER_PATH } from '../../commons/constants/paths.const';
 import { doLoginAction } from '../../store/sections/login/login.actions';
+import {Image} from "primereact/image";
+import yacoLogoSVG from "../../../public/assets/images/Isotipo_YACO.svg";
 
 const LoginComponent = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const LoginComponent = () => {
         <div id="login-form">
           <div className="grid center-item ">
             <div className="col center-item">
-              <LogoYaco />
+              <Image src={yacoLogoSVG} alt="Logo YACO" width="600" />
             </div>
           </div>
           <div className="grid">
@@ -55,8 +56,7 @@ const LoginComponent = () => {
                   <Button
                     label="Ingresar"
                     onClick={() => {
-                      dispatch(doLoginAction(user, password));
-                      navigate(HOME_PATH);
+                      dispatch(doLoginAction(user, password, navigate));
                     }}
                     className="p-button-rounded p-button-success background-main-YACO"
                   />

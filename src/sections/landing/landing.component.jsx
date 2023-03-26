@@ -4,7 +4,6 @@ import { Button } from 'primereact/button';
 import { Image } from 'primereact/image';
 import yacoLogoSVG from '../../../public/assets/images/Isotipo_YACO.svg';
 import yacoImagotipePNG from '../../../public/assets/images/imagotipo_transparency.png';
-import LogoYaco from '../../commons/logo-yaco.component';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import { useNavigate } from 'react-router-dom';
@@ -54,8 +53,8 @@ const LandingComponent = () => {
               Anímese a conocer la tierrita sumercé!
             </h1>
           </div>
-          <div className="col-6" style={myStyles.fadeIn}>
-            <LogoYaco/>
+          <div className="col-6 center-item" style={myStyles.fadeIn}>
+            <Image src={yacoLogoSVG} alt="Logo YACO" width="600" />
           </div>
         </div>
       </StyleRoot>
